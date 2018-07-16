@@ -183,8 +183,9 @@ def generate_message():
     emoji = random.choice([ emoji, emoji+emoji, emoji+emoji+emoji])
 
     body = ' '.join([please, prompt, transition, action+punctuation, emoji])
+    tags = ['selfcare', 'self care', 'selfcare bot', tag]
 
-    message = {'tags': 'selfcare, self care, selfcare bot, '+tag, 'title': title, 'body':body}
+    message = {'tags': tags, 'title': title, 'body':body}
     return message
 
 post_message()
