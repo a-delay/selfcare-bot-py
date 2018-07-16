@@ -1,17 +1,15 @@
 #!/usr/bin/env python
 import pytumblr
 import random
-import pw
+import os
 
 def post_message(post=True):
     client = pytumblr.TumblrRestClient(
-        pw.C_KEY,
-        pw.C_SEC,
-        pw.OAT,
-        pw.OAT_SEC
+        os.environ['HKU_C_KEY'],
+        os.environ['HKU_C_SEC'],
+        os.environ['HKU_OAT'],
+        os.environ['HKU_OAT_SEC']
     )
-
-    print(client.info())
 
     message = generate_message();
 
@@ -189,4 +187,4 @@ def generate_message():
     message = {'tags': 'selfcare, self care, selfcare bot, '+tag, 'title': title, 'body':body}
     return message
 
-post_message(False)
+post_message()
