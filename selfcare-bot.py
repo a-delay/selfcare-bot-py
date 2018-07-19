@@ -149,7 +149,7 @@ def generate_message():
              "*with love and support*",
              "*a soft bird lands on your shoulder*",
              "times are rough but please take care of urself",
-             "\u1f3b6 *whistles a happy tune*",
+             "\U0001f3b6 *whistles a happy tune*",
              "a quick reminder!!!",
              "got a minute?",
              "welcome to the self-care zone"]
